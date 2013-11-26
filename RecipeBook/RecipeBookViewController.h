@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RecipeBookViewController : UIViewController
+@interface RecipeBookViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, UISearchDisplayDelegate>
+
+@property (nonatomic, strong) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) IBOutlet UISearchBar *searchBar;
 
 @end
